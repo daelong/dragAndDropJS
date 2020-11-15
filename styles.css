@@ -2,16 +2,24 @@
 body {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .moveThing {
-  position: relative;
+  position: absolute;
   border: 1px black solid;
   width: 100px;
   height: 100px;
+  cursor: pointer;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
 }
 .target {
+  position: relative;
   border: 1px red dotted;
   width: 150px;
   height: 150px;
+  left: 500px;
+  top: 50px;
+  z-index: -1;
 }
